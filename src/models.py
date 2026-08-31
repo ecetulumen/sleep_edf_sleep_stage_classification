@@ -1,3 +1,8 @@
+import tensorflow as tf
+from tensorflow.keras import layers, models, regularizers
+
+from .config import N_CLASSES
+
 # 7. MODEL MİMARİLERİ
 
 def temporal_attention(x, name_prefix="temporal"):
@@ -275,4 +280,6 @@ def build_balanced_adaptive_fusion(raw_shape, seq_shape, feature_dim):
         [raw_inp, seq_inp, feat_inp],
         out,
         name="Balanced_AdaptiveFusion"
+    )
+
 

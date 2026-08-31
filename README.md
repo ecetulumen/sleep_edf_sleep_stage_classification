@@ -121,8 +121,9 @@ sleep_edf_sleep_stage_classification/
 │   ├── evaluation.py
 │   └── main.py
 │
-├── notebooks/
+├── notebook/
 ├── results/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
+The original Google Colab workflow is available in `notebook/`, while the modular and reusable implementation is provided under `src/`.

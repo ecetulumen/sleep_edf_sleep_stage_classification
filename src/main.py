@@ -181,7 +181,7 @@ def main(argv=None):
             output = run_experiment(config)
             print("Completed:", output.resolve())
     except (FileNotFoundError, ValueError, ImportError) as exc:
-        parser.exit(2, f"Error: {exc}\nSee BASLANGIC_TR.md for setup and data instructions.\n")
+        parser.exit(2, f"Error: {exc}\nSee README.md for setup and processed-data instructions.\n")
 
 
 if __name__ == "__main__":
